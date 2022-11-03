@@ -6,11 +6,11 @@ CREATE TABLE dwarves (
   id BIGINT GENERATED ALWAYS AS IDENTITY,
   name VARCHAR NOT NULL,
   purpose VARCHAR NOT NULL,
-  from VARCHAR NOT NULL,
+  source VARCHAR NOT NULL,
   url VARCHAR NOT NULL,
 );
 
-INSERT INTO dwarves (name, purpose, from, url)
+INSERT INTO dwarves (name, purpose, source, url)
 VALUES
 ('Gimli', 'Lord of the Glittering Caves', 'Middle Earth', 'https://hero.fandom.com/wiki/Gimli'),
 ('Balin', 'Lord of Moria', 'Middle Earth', 'https://hero.fandom.com/wiki/Balin'),
@@ -24,11 +24,11 @@ DROP TABLE IF EXISTS elves;
 --   id BIGINT GENERATED ALWAYS AS IDENTITY,
 --   name VARCHAR NOT NULL,
 --   purpose VARCHAR NOT NULL,
---   from VARCHAR NOT NULL,
+--   source VARCHAR NOT NULL,
 --   url VARCHAR NOT NULL
 -- );
 
--- INSERT INTO elves (name, purpose, from, url)
+-- INSERT INTO elves (name, purpose, source, url)
 -- VALUES
 -- ('Gimli', 'Lord of the Glittering Caves', 'Middle Earth', 'https://hero.fandom.com/wiki/Gimli'),
 -- ('Balin', 'Lord of Moria', 'Middle Earth', 'https://hero.fandom.com/wiki/Balin'),
