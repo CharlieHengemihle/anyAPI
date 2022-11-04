@@ -38,6 +38,7 @@ describe('elves routes', () => {
   beforeEach(() => {
     return setup(pool);
   });
+
   it('/elves should return a list of elves', async () => {
     const res = await request(app).get('/elves');
     const expected = elves.map((elf) => {
@@ -45,6 +46,19 @@ describe('elves routes', () => {
     });
     expect(res.body).toEqual(expected);
   });
+
+  it('/elves/:id should return a elves details', async () => {
+    const res = await request(app).get('/elves/1');
+    const legolas = {
+      id: '1',
+      name: 'Legolas Greenleaf',
+      purpose: 'Prince of the Woodland Realm',
+      source: 'Middle Earth',
+      url: 'https://hero.fandom.com/wiki/Legolas',
+    };
+    expect(res.body).toEqual(legolas);
+  });
+
   afterAll(() => {
     pool.end();
   });
