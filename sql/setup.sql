@@ -34,5 +34,5 @@ VALUES
 ('Celebrimbor', 'Lord of the Gwaith-i-Mírdain', 'Middle Earth', 'https://lotr.fandom.com/wiki/Celebrimbor'),
 ('Ernest J. Keebler', 'Head Elf', 'The Hollow Tree Factory', 'https://en.wikipedia.org/wiki/Keebler_Company#Keebler_Elves'),
 ('Remallia Haventree', 'Lead Delegate of the Harpers', 'Waterdeep', 'https://forgottenrealms.fandom.com/wiki/Remallia_Haventree'),
-('Kiaransalee', 'Lady of the Dead', 'Threnody', 'https://forgottenrealms.fandom.com/wiki/Kiaransalee'),
+('Kiaransalee', 'Lady of the Dead', 'Threnody', 'https://forgottenrealms.fandom.com/wiki/Kiaransalee');
 
