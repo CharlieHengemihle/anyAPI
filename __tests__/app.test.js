@@ -17,9 +17,17 @@ describe('dwarves routes', () => {
     expect(res.body).toEqual(expected);
   });
 
-  // it('example test - delete me!', () => {
-  //   expect(1).toEqual(1);
-  // });
+  it('/dwarves/:id should return a dwarves details', async () => {
+    const res = await request(app).get('/dwarves/1');
+    const gimli = {
+      id: '1',
+      name: 'Gimli',
+      purpose: 'Lord of the Glittering Caves',
+      source: 'Middle Earth',
+      url: 'https://hero.fandom.com/wiki/Gimli',
+    };
+    expect(res.body).toEqual(gimli);
+  });
   afterAll(() => {
     pool.end();
   });
