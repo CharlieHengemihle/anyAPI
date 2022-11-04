@@ -54,7 +54,7 @@ describe('elves routes', () => {
       name: 'Legolas Greenleaf',
       purpose: 'Prince of the Woodland Realm',
       source: 'Middle Earth',
-      url: 'https://hero.fandom.com/wiki/Legolas',
+      url: 'https://lotr.fandom.com/wiki/Legolas',
     };
     expect(res.body).toEqual(legolas);
   });
